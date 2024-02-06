@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SiddiqiaMosque" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/maintheme</item>
+    </style>
+
+    <style name="Theme.SiddiqiaMosque" parent="Base.Theme.SiddiqiaMosque" />
+</resources>

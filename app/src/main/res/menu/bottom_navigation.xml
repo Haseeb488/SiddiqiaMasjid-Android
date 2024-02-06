@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nave_hadith"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Daily Hadith"/>
+
+
+    <item
+        android:id="@+id/nav_LiveStreaming"
+        android:icon="@drawable/livestreamicon"
+        android:title="LiveStreaming"/>
+
+    <item
+        android:id="@+id/nav_prayerTiming"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Prayer Timings"/>
+
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="Events"/>
+
+</menu>

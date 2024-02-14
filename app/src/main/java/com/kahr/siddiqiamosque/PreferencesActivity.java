@@ -113,7 +113,7 @@ public class PreferencesActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(PreferencesActivity.this);
 
         // Set the custom style for the message text
-        builder.setMessage(Html.fromHtml("<font color='#FFFFFF'>Radio Mode automatically launches MKCJM app and starts live streaming when broadcasting starts from the mosque</font>" +
+        builder.setMessage(Html.fromHtml("<font color='#FFFFFF'>Radio Mode automatically launches Siddiqia Masjid app and starts live streaming when broadcasting starts from the mosque</font>" +
                 "<br><br>Are you sure you want to select Radio Mode?"));
 
         builder.setTitle("Radio Mode")
@@ -183,7 +183,7 @@ public class PreferencesActivity extends AppCompatActivity {
       AlertDialog.Builder builder = new AlertDialog.Builder(PreferencesActivity.this);
 
       // Set the custom style for the message text
-      builder.setMessage(Html.fromHtml("<font color='#FFFFFF'>Application Mode will not automatically launch MKCJM app; however, you will receive a notification when broadcasting starts from the Mosque. By tapping on the notification, you can listen to live streaming from the Mosque through your mobile device.</font>" +
+      builder.setMessage(Html.fromHtml("<font color='#FFFFFF'>Application Mode will not automatically launch Siddiqia Masjid app; however, you will receive a notification when broadcasting starts from the Mosque. By tapping on the notification, you can listen to live streaming from the Mosque through your mobile device.</font>" +
               "<br><br>Are you sure you want to select Application Mode?"));
 
       builder.setTitle("Application Mode")

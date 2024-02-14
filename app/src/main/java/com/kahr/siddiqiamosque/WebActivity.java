@@ -95,7 +95,7 @@ public class WebActivity extends AppCompatActivity {
     Animation blinking;
 
     private static final String insertUrl = "http://onpointglobal.co.uk/mkcjm/insert.php";
-    private static final String jsonStatus = "http://onpointglobal.co.uk/mkcjm/jsonStatus.php";
+    private static final String streamingUrlJson = "https://securenet.justyes.co.uk/Prod/SiddiqiaMosque/streamingUrl.php";
     private static final String getEventsInfo_Url = "https://onpointglobal.co.uk/mkcjm/events.php";
 
     public static final String SHARED_PREFS = "sharedPrefs";
@@ -445,7 +445,7 @@ public class WebActivity extends AppCompatActivity {
 
         progressDialog.show();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, jsonStatus,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, streamingUrlJson,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -623,7 +623,10 @@ public class WebActivity extends AppCompatActivity {
         } else {
 
             off.setVisibility(View.VISIBLE);
+            on.clearAnimation();
             on.setVisibility(View.INVISIBLE);
+
+
             soundStatus.setText("Sound Status");
             //    AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
             //   audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 0, 0);
@@ -796,8 +799,8 @@ public class WebActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(WebActivity.this, R.style.AlertDialogStyle);
 
         builder.setTitle(Html.fromHtml("<font color='#FFFFFF'>Permission Required</font>"))
-                .setMessage(Html.fromHtml("<font color='#FFFFFF'>MKCJM app required permission to draw on screen, on the next page" +
-                        " scroll down to MKCJM app and allow permission</font>"
+                .setMessage(Html.fromHtml("<font color='#FFFFFF'>Siddiqia Masjid app required permission to draw on screen, on the next page" +
+                        " scroll down to Siddiqia Masjid app and allow permission</font>"
                 ))
 
                 .setPositiveButton(Html.fromHtml("<font color='#FFFFFF'>OK</font>"), new DialogInterface.OnClickListener() {
@@ -1036,7 +1039,6 @@ public class WebActivity extends AppCompatActivity {
                             AudioManager.ADJUST_RAISE, AudioManager.FLAG_SHOW_UI);
                     volume.setTextColor(Color.parseColor("#9CC4E9"));
                     muteIcon.setVisibility(View.INVISIBLE);
-
                     Toast.makeText(this, "Mosque is Not Broadcasting", Toast.LENGTH_SHORT).show();
 
                 }
